@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "Beautique Display";
+  src: url("/assets/BeautiqueDisplay-Regular.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-header {
+  background-image: url("/assets/home/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 115vh;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .navbar {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    font-style: no;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 10%;
+    padding: 1% 0;
+
+    a.active {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+
+  .nav-button {
+    margin: 5% 0;
+    text-align: center;
+
+    button {
+      width: 15%;
+
+      padding: 14px 24px 10px;
+
+      border: none;
+      border-radius: 9999px;
+
+      background-color: #e9e9e9;
+
+      font-size: 18px;
+      font-family: "Beautique Display", sans-serif;
+
+      cursor: pointer;
+
+      i {
+        margin-left: 10%;
+        margin-right: -10%;
+      }
+    }
+  }
+}
