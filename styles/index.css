@@ -296,3 +296,469 @@ a {
     margin: 2em;
   }
 }
+
+.home-about-3 {
+  margin: 0;
+  background-color: #eae6db;
+
+  position: relative;
+
+  font-family: "Beautique Display", sans-serif;
+
+  h2 {
+    position: absolute;
+    top: 0%;
+    left: 41%;
+
+    font-size: 56px;
+    font-weight: lighter;
+  }
+
+  .container {
+    display: flex;
+
+    .left {
+      width: 50%;
+      background-image: url("../assets/home/about5.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+
+      .left-container {
+        padding: 25% 2.5%;
+        text-align: center;
+
+        h3 {
+          font-size: 36px;
+          font-weight: lighter;
+          line-height: 2em;
+        }
+
+        p {
+          margin: 5% 10%;
+          text-align: left;
+          text-indent: 1em;
+          font-family: "Caudex", sans-serif;
+          font-size: 24px;
+        }
+
+        .link-button {
+          margin-top: 4%;
+          width: 40%;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      background-image: url("../assets/home/about4.png");
+      background-size: cover;
+      background-position: center;
+    }
+  }
+}
+
+.rings {
+  width: 100%;
+  margin: 1.5em 0;
+
+  display: flex;
+  justify-content: center;
+}
+
+.home-gallery {
+  margin: 0;
+  background-color: #eae6db;
+
+  font-family: "Beautique Display", sans-serif;
+  text-align: center;
+
+  padding-bottom: 5%;
+
+  h2 {
+    font-size: 56px;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 3%;
+  }
+
+  p {
+    font-size: larger;
+    font-family: "Caudex", sans-serif;
+  }
+
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 150px;
+    gap: 10px;
+    padding: 2% 10%;
+  }
+
+  .item {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+  }
+
+  .item1 {
+    grid-column: span 1;
+    grid-row: span 2;
+  }
+  .item2 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item5 {
+    grid-column: span 1;
+    grid-row: span 3;
+  }
+  .item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .item8 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .item9 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .item10 {
+    grid-column: span 2;
+    grid-row: span 1;
+  }
+  .item11 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+}
+
+.home-blog {
+  margin: 0;
+  background-color: #f7f4f0;
+  font-family: "Beautique Display", sans-serif;
+  text-align: center;
+
+  h2 {
+    font-size: 60px;
+    font-weight: lighter;
+    margin: 0;
+    padding-top: 3%;
+    margin-bottom: 3rem;
+  }
+
+  .blog-content {
+    margin: 5% 0;
+    display: flex;
+    justify-content: center;
+    gap: 1%;
+    text-align: left;
+
+    .blog-images.left {
+      position: relative;
+      width: 45%;
+
+      .main-image {
+        width: 60%;
+        border-radius: 6px;
+      }
+
+      .overlay-image {
+        position: absolute;
+        top: 20%;
+        left: 40%;
+        width: 45%;
+      }
+    }
+
+    .blog-images.right {
+      position: relative;
+      width: 45%;
+
+      .main-image {
+        width: 60%;
+        border-radius: 6px;
+        float: right;
+      }
+
+      .overlay-image {
+        position: absolute;
+        top: 20%;
+        right: 40%;
+        width: 45%;
+      }
+    }
+
+    .blog-logo {
+      width: 7%;
+
+      .logo {
+        width: 125px;
+        height: auto;
+      }
+
+      .line-container {
+        display: flex;
+        justify-content: center;
+
+        .line {
+          width: 0;
+          border: 2px solid black;
+          height: 90vh;
+        }
+      }
+    }
+
+    .blog-text {
+      width: 40%;
+
+      padding-left: 1%;
+      padding-right: 4%;
+
+      font-family: "Caudex", serif;
+
+      h3 {
+        font-family: "Beautique Display", sans-serif;
+        font-size: 28px;
+        font-weight: normal;
+        margin-bottom: 4rem;
+
+        span {
+          display: block;
+          font-size: 32px;
+          font-weight: bold;
+          letter-spacing: 0.5px;
+        }
+      }
+
+      p {
+        font-size: 20px;
+        line-height: 1.7;
+        margin-bottom: 1.2rem;
+        font-family: "Caudex", serif;
+      }
+
+      .link {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        button {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+
+.home-studio {
+  margin: 0;
+
+  font-family: "Beautique Display", sans-serif;
+  text-align: center;
+
+  padding-bottom: 5%;
+
+  h2 {
+    font-size: 56px;
+    font-weight: lighter;
+    margin: 0;
+  }
+
+  .studio {
+    margin: 10% 0;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+    .studio-member {
+      position: relative;
+      width: 20%;
+
+      .tag {
+        z-index: 1;
+        position: absolute;
+        top: 15%;
+        right: 2%;
+        background: #f7f4f0;
+        padding: 8px 12px;
+        transform: rotate(90deg);
+        transform-origin: top right;
+        font-family: "Caudex", serif;
+        font-size: 12px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      }
+
+      .studio-member-image {
+        width: 100%;
+        aspect-ratio: 1/1;
+        background-color: #d9d9d9;
+      }
+
+      h4 {
+        font-family: "Caudex", sans-serif;
+        font-weight: lighter;
+      }
+    }
+  }
+}
+
+.footer {
+  font-family: "Caudex", serif;
+
+  .footer-top {
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem 5%;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #ddd;
+
+    .footer-info {
+      text-align: center;
+      margin: 1rem;
+
+      h4 {
+        font-family: "Beautique Display", serif;
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        margin-bottom: 0.5rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 14px;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        font-size: 18px;
+      }
+    }
+  }
+
+  .footer-bottom {
+    position: relative;
+    background: #eae6db;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 5%;
+
+    .footer-left {
+      flex: 1;
+      display: flex;
+
+      min-width: 250px;
+
+      .footer-bottom-info-container {
+        flex: 1;
+
+        .footer-logo {
+          width: 40%;
+          aspect-ratio: 1/1;
+          margin-bottom: 1rem;
+        }
+
+        .footer-bottom-contact-info {
+          margin-top: 3%;
+          p {
+            margin: 0.5rem 0;
+            font-size: 14px;
+
+            i {
+              margin-right: 0.5rem;
+            }
+          }
+        }
+      }
+    }
+
+    .footer-right {
+      min-width: 250px;
+      text-align: center;
+
+      .brand-social {
+        font-size: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .newsletter-label {
+        font-family: "Beautique Display", sans-serif;
+        font-size: 12px;
+        color: #b58d54;
+        margin-bottom: 0.5rem;
+        font-weight: bold;
+      }
+
+      .newsletter-form {
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+        flex-wrap: wrap;
+
+        input {
+          padding: 10px 14px;
+          background: transparent;
+          border: 1px solid black;
+          border-radius: 999px;
+          font-size: 12px;
+          width: 160px;
+          font-family: "Caudex", serif;
+        }
+
+        button {
+          background-color: #b58d54;
+          color: white;
+          padding: 10px 24px;
+          border: none;
+          border-radius: 999px;
+          font-family: "Caudex", serif;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .copyright {
+      position: absolute;
+      bottom: 0;
+      left: 45%;
+
+      text-align: center;
+      font-size: 12px;
+      padding-bottom: 1rem;
+      margin: 0;
+    }
+  }
+}
