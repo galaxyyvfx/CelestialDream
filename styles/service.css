@@ -386,3 +386,230 @@
     }
   }
 }
+
+.service-luxury {
+  margin: 0;
+  padding: 0;
+
+  position: relative;
+  background-color: #f7f4f0;
+  font-family: "Beautique Display", sans-serif;
+  overflow: hidden;
+
+  .luxury-bg {
+    margin-top: -10%;
+    img {
+      margin-top: 20%;
+      width: 100%;
+      height: 100%;
+      mix-blend-mode: luminosity;
+      object-fit: cover;
+    }
+  }
+
+  .luxury-content {
+    .luxury-content-text {
+      margin: 7% 7.5%;
+
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+    }
+
+    .luxury-title h2 {
+      font-size: 52px;
+      color: #4a3b37;
+      font-weight: lighter;
+      text-align: left;
+      margin-bottom: 2rem;
+    }
+
+    .luxury-description {
+      max-width: 700px;
+      margin-bottom: 2rem;
+      text-align: right;
+
+      p {
+        font-family: "Caudex", sans-serif;
+        list-style: disc;
+        padding-left: 1.5rem;
+        text-align: right;
+        font-size: 14px;
+        line-height: 1.6;
+        color: #4a3b37;
+      }
+    }
+
+    .luxury-images {
+      position: absolute;
+      top: 35%;
+
+      margin-left: -10%;
+
+      width: 120%;
+      z-index: 2;
+      gap: 7.5%;
+      display: flex;
+      margin-bottom: 2rem;
+      justify-content: space-between;
+
+      .luxury-image {
+        width: 25%;
+        aspect-ratio: 1/2;
+        border-radius: 40px;
+        scroll-snap-type: x mandatory;
+        overflow: hidden;
+        scroll-snap-align: center;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .luxury-button {
+      width: 100%;
+      text-align: center;
+      position: relative;
+
+      button {
+        font-family: "Beautique Display", sans-serif;
+        position: absolute;
+        bottom: 7.5em;
+        left: 45%;
+
+        padding: 10px 30px;
+        border-radius: 30px;
+        font-size: 18px;
+        border: 1px solid #4a3b37;
+        background: none;
+        color: white;
+        cursor: pointer;
+        transition: all 0.2s ease;
+
+        &:hover {
+          background-color: #4a3b37;
+        }
+      }
+    }
+  }
+}
+
+.service-notes {
+  padding: 2% 5%;
+  background-color: #f7f4f0;
+
+  .notes-container {
+    background-color: #e0e0e0;
+    border-radius: 1em;
+
+    padding: 2% 10%;
+    font-family: "Caudex", sans-serif;
+    font-size: 28px;
+
+    li {
+      color: #4a3b37;
+    }
+  }
+}
+
+.service-contact-us {
+  background: #faf6f1;
+
+  font-family: "Beautique Display", sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  border-top: 1px solid #4a3b37;
+  margin: 0 5%;
+}
+
+.contact-container h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-top: 5%;
+}
+
+.form-box {
+  background: url("your-marble-texture.png") center/cover no-repeat;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.note {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.captcha-box {
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+button {
+  background-color: #c2a265;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a78e5e;
+}
