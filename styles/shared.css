@@ -19,6 +19,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Black Mango";
+  src: url("../assets/black-mango-regular.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -139,6 +146,102 @@ a {
       word-spacing: 0.1em;
     }
   }
+}
+
+.contact-us {
+  background: #faf6f1;
+
+  font-family: "Beautique Display", sans-serif;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.contact-container {
+  border-top: 1px solid #4a3b37;
+  margin: 0 5%;
+}
+
+.contact-container h1 {
+  font-size: 40px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-top: 5%;
+}
+
+.form-box {
+  background: url("your-marble-texture.png") center/cover no-repeat;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 30px;
+  background-color: rgba(255, 255, 255, 0.6);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.form-box h2 {
+  font-size: 22px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.note {
+  font-size: 10px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form textarea {
+  width: 90%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 1px #ccc;
+  font-size: 14px;
+}
+
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+.form-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.captcha {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  gap: 10px;
+}
+
+.captcha-box {
+  background-color: #eaeaea;
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  font-size: 10px;
+  margin-left: 5px;
+}
+
+button {
+  background-color: #c2a265;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #a78e5e;
 }
 
 .footer {
