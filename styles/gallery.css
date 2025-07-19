@@ -1,0 +1,123 @@
+@import url("shared.css");
+
+.header {
+  background-image: url("../assets/gallery/bg1.png");
+  background-position: center;
+}
+
+h2,
+h3 {
+  font-family: "Black Mango", serif;
+}
+
+p {
+  font-family: "Caudex", serif;
+}
+
+.gallery-wedding-banquet {
+  background: #ffffff;
+  font-family: "Beautique Display", serif;
+  text-align: center;
+}
+
+.gallery-wedding-banquet .banquet-container {
+  margin: 0 5%;
+}
+
+.gallery-wedding-banquet .banquet-title {
+  font-size: 64px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.gallery-wedding-banquet .banquet-sub {
+  font-size: 14px;
+  line-height: 1.8;
+  margin-bottom: 50px;
+}
+
+.gallery-wedding-banquet .banquet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-wedding-banquet .banquet-grid .item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 8px;
+}
+
+/* Specific image positioning */
+.gallery-wedding-banquet .img1 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img2 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.gallery-wedding-banquet .img3 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img5 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.gallery-wedding-banquet .img6 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img7 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img8 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img9 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img10 {
+  grid-column: span 1;
+  grid-row: span 2;
+}
+.gallery-wedding-banquet .img11 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+.gallery-wedding-banquet .img12 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* Images styling */
+.gallery-wedding-banquet .banquet-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .gallery-wedding-banquet .banquet-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery-wedding-banquet .img1,
+  .gallery-wedding-banquet .img2,
+  .gallery-wedding-banquet .img3,
+  .gallery-wedding-banquet .img4 {
+    grid-column: span 1;
+  }
+}
