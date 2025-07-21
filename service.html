@@ -12,12 +12,12 @@
   <body>
     <section class="header">
       <div class="navbar">
-        <a href="/">HOME</a>
-        <a href="/ourstory.html">OUR STORY</a>
-        <a href="/service.html" class="active">SERVICE</a>
+        <a href="./">HOME</a>
+        <a href="./ourstory.html">OUR STORY</a>
+        <a href="./service.html" class="active">SERVICE</a>
         <a><img src="assets/home/logo.png" /></a>
-        <a href="/blog.html">BLOG</a>
-        <a href="/gallery.html">GALLERY</a>
+        <a href="./blog.html">BLOG</a>
+        <a href="./gallery.html">GALLERY</a>
         <div class="nav-actions">
           <div class="search-box">
             <input type="text" placeholder="Search..." />
@@ -25,10 +25,10 @@
               <img src="assets/search.png" alt="search" />
             </button>
           </div>
-          <a href="/signin.html">
+          <a href="./signin.html">
             <img src="assets/cart.png" alt="cart" />
           </a>
-          <a href="/signin.html">
+          <a href="./signin.html">
             <img src="assets/user.png" alt="user" />
           </a>
         </div>
@@ -76,35 +76,47 @@
         harmonious music and a beautifully orchestrated ceremony.
       </p>
       <section class="booking-grid">
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking1.png" alt="Consultation" />
           <p>Direct consultation about the service</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking2.png" alt="Deposit" />
           <p>Make a deposit</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking3.png" alt="Site Survey" />
           <p>Site survey and measurement</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking4.png" alt="Step 4" />
           <p>Concept development and design</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking5.png" alt="Step 5" />
           <p>Production and decoration setup</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
-        <div class="booking-card">
+        <div id="bookNowBtn" class="booking-card">
           <img src="assets/service/booking6.png" alt="Step 6" />
           <p>Completion</p>
-          <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          <a href="#contact">
+            <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+          </a>
         </div>
       </section>
     </section>
@@ -118,7 +130,11 @@
 
       <h2>CONCEPT DESIGN</h2>
       <div class="concept-design-button">
-        <button>BOOK NOW <i class="fa-solid fa-arrow-right"></i></button>
+        <a href="#contact">
+          <button id="bookNowBtn">
+            BOOK NOW <i class="fa-solid fa-arrow-right"></i>
+          </button>
+        </a>
       </div>
 
       <!-- 🎯 Start of Grid -->
@@ -203,7 +219,9 @@
           artistic lighting, pro MC & A/V system,<br />
           wedding film, luxury bridal car
         </p>
-        <button>BOOK NOW</button>
+        <a href="#contact">
+          <button id="bookNowBtn">BOOK NOW</button>
+        </a>
         <div>
           <img src="assets/home/logo.png" class="logo" alt="Logo" />
         </div>
@@ -257,9 +275,11 @@
           </div>
         </div>
 
-        <div class="luxury-button">
-          <button>BOOK NOW</button>
-        </div>
+        <a href="#contact">
+          <div class="luxury-button">
+            <button id="bookNowBtn">BOOK NOW</button>
+          </div>
+        </a>
       </div>
     </section>
 
@@ -280,7 +300,7 @@
     </section>
 
     <section class="contact-us">
-      <div class="contact-container">
+      <div id="contact" class="contact-container">
         <h1>CONTACT US</h1>
         <div class="form-box">
           <h2>EVENT ENQUIRY</h2>
