@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="styles/gallery.css" />
+    <link rel="stylesheet" href="styles/signin.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -17,7 +17,7 @@
         <a href="/service.html">SERVICE</a>
         <a><img src="assets/home/logo.png" /></a>
         <a href="/blog.html">BLOG</a>
-        <a href="/gallery.html" class="active">GALLERY</a>
+        <a href="/gallery.html">GALLERY</a>
         <div class="nav-actions">
           <div class="search-box">
             <input type="text" placeholder="Search..." />
@@ -33,83 +33,72 @@
           </a>
         </div>
       </div>
-
-      <div class="nav-button">
-        <h1>A JOURNEY OF US CAPTURED IN TIME</h1>
-        <button class="link-button">
-          EXPLORE NOW
-          <i class="fa-solid fa-arrow-right"></i>
-        </button>
-      </div>
     </section>
 
-    <section class="header-below">
-      <div class="text-pattern">
-        <div class="line cut">
-          CELESTIALDREAM CELESTIALDREAM CELESTIALDREAM CELESTIALDREAM
-          CELESTIALDREAM CELESTIALDREAM
+    <div class="signin-container">
+      <!-- Left image area -->
+      <div class="signin-left">
+        <div class="carousel">
+          <img src="assets/signin/signin1.jpg" class="active" alt="" />
+          <img src="assets/signin/signin2.jpg" alt="" />
+          <img src="assets/signin/signin3.jpg" alt="" />
         </div>
-        <div class="line full">
-          CELESTIALDREAM CELESTIALDREAM CELESTIALDREAM CELESTIALDREAM
-          CELESTIALDREAM
+        <div class="indicator">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
         </div>
       </div>
-      <div class="contact-info">
-        <p>PHONE: <span>+123 457 892</span></p>
-        <p>
-          LOCATION: <span>1 Ly Tu Trong, Thoi Binh, Can Tho, Viet Nam</span>
-        </p>
-        <p>EMAIL: <span>CelestialDream@gmail.com</span></p>
+
+      <!-- Right form area -->
+      <div class="signin-right">
+        <h2>SIGN IN</h2>
+        <form>
+          <div class="input-box">
+            <input placeholder="EMAIL" />
+          </div>
+          <div class="input-box">
+            <input type="tel" placeholder="PHONE NUMBER" />
+          </div>
+          <div class="input-box">
+            <input type="password" placeholder="PASSWORD" />
+          </div>
+          <button type="submit" class="signin-btn">SIGN IN</button>
+        </form>
+
+        <div class="or-section">
+          <span>OR SIGN UP</span>
+        </div>
+        <div class="socials">
+          <button class="social-btn fb">
+            <i class="fa fa-facebook-f"></i>
+          </button>
+          <button class="social-btn google">
+            <i class="fa fa-google"></i>
+          </button>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <section class="gallery-wedding-banquet">
-      <div class="banquet-container">
-        <h2 class="banquet-title">WEDDING BANQUET</h2>
-        <p class="banquet-sub">
-          IMPRESSIVE PHOTO GALLERY OF EVENTS – WEDDINGS – MEMORABLE MOMENTS HELD
-          AT CELESTIAL DREAM.<br />
-          WE ARE TRULY HONORED TO BE CHOSEN AS THE VENUE FOR CREATING THESE
-          SIGNIFICANT MOMENTS
-        </p>
-
-        <div class="banquet-grid">
-          <div class="item img1">
-            <img src="assets/gallery/gallery1.png" alt="1" />
-          </div>
-          <div class="item img2">
-            <img src="assets/gallery/gallery2.png" alt="2" />
-          </div>
-          <div class="item img3">
-            <img src="assets/gallery/gallery3.png" alt="3" />
-          </div>
-          <div class="item img4">
-            <img src="assets/gallery/gallery4.png" alt="4" />
-          </div>
-          <div class="item img5">
-            <img src="assets/gallery/gallery5.png" alt="5" />
-          </div>
-          <div class="item img6">
-            <img src="assets/gallery/gallery6.png" alt="6" />
-          </div>
-          <div class="item img7">
-            <img src="assets/gallery/gallery7.png" alt="7" />
-          </div>
-          <div class="item img8">
-            <img src="assets/gallery/gallery8.png" alt="8" />
-          </div>
-          <div class="item img9">
-            <img src="assets/gallery/gallery9.png" alt="9" />
-          </div>
-          <div class="item img10">
-            <img src="assets/gallery/gallery10.png" alt="10" />
-          </div>
-          <div class="item img11">
-            <img src="assets/gallery/gallery11.png" alt="11" />
-          </div>
-          <div class="item img12">
-            <img src="assets/gallery/gallery12.png" alt="12" />
-          </div>
+    <section class="contact-us">
+      <div class="contact-container">
+        <h1></h1>
+        <div class="form-box">
+          <h1>SIGN UP</h1>
+          <form>
+            <input type="text" placeholder="FIRST NAME" required />
+            <input type="text" placeholder="LAST NAME" required />
+            <input
+              type="text"
+              placeholder="BIRTH DAY ..... / ..... / ....."
+              required
+            />
+            <input type="email" placeholder="EMAIL" required />
+            <input type="text" placeholder="PHONE NUMBER" required />
+            <input type="password" placeholder="PASSWORD" required />
+            <input type="password" placeholder="CONFIRM PASSWORD" required />
+            <button type="submit">SIGN UP</button>
+          </form>
         </div>
       </div>
     </section>
@@ -175,6 +164,6 @@
       </div>
     </section>
 
-    <script src="scripts/main-carousel.js" defer></script>
+    <script src="scripts/signin-carousel.js" defer></script>
   </body>
 </html>

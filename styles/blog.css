@@ -1,0 +1,175 @@
+@import url("shared.css");
+
+.header {
+  background-image: url("../assets/blog/bg1.png");
+  background-position: center;
+}
+
+h2,
+h3 {
+  font-family: "Black Mango", serif;
+}
+
+p {
+  font-family: "Caudex", serif;
+}
+
+.blog-header {
+  background: #fefaf1; /* soft cream background like screenshot */
+  padding: 60px 20px;
+  font-family: "Beautique Display", serif;
+  text-align: center;
+}
+
+.blog-header .blog-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.blog-header .blog-image {
+  position: relative;
+  display: inline-block;
+}
+
+.blog-header .blog-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.blog-header .blog-overlay {
+  position: absolute;
+  right: -8em;
+  bottom: -2em;
+  background: #fff;
+  padding: 20px 30px;
+  text-align: left;
+  max-width: 250px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+}
+
+.blog-header .blog-overlay h3 {
+  font-size: 20px;
+  color: #c4a05e;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.blog-header .blog-overlay h4 {
+  font-size: 22px;
+  color: #c4a05e;
+  margin-bottom: 12px;
+  letter-spacing: 1px;
+}
+
+.blog-header .blog-overlay p {
+  font-size: 14px;
+  line-height: 1.6;
+  font-family: serif;
+  color: #000;
+}
+
+.blog-header .blog-title {
+  margin-top: 50px;
+}
+
+.blog-header .blog-title h2 {
+  font-size: 42px;
+  color: #c4a05e;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+}
+
+.blog-header .blog-title p {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #000;
+}
+
+.wedding-sections {
+  position: relative;
+  background-color: #fefaf1;
+  font-family: "Beautique Display", serif; /* your custom font */
+  padding: 0 0;
+}
+
+.section-block {
+  background: #e9e5da;
+  margin-bottom: 4rem;
+}
+
+.section-title {
+  text-align: center;
+  margin-top: -1%;
+  position: absolute;
+  width: 20em;
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  color: #bfa14a;
+  background: #fff;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.gallery-row {
+  padding-top: 4%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  gap: 6rem;
+}
+
+.gallery-item {
+  text-align: center;
+  position: relative;
+}
+
+.image-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-wrap img {
+  display: block;
+}
+
+.img-label-box {
+  position: absolute;
+  bottom: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #ffffff;
+  display: inline-block;
+  height: 2.5em;
+  width: 12em;
+  padding-top: 1em;
+  font-size: 0.75em;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000;
+  border-radius: 2px; /* optional */
+}
+
+.caption {
+  font-size: 0.8rem;
+  margin-top: 4em;
+  text-transform: uppercase;
+  color: #000;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .blog-header .blog-overlay {
+    position: static;
+    margin-top: 20px;
+    max-width: 100%;
+    text-align: center;
+  }
+  .blog-header .blog-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

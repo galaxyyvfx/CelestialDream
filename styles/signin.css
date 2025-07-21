@@ -1,0 +1,171 @@
+@import url("shared.css");
+
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  background: #fefaf1;
+}
+
+.header {
+  height: 15vh;
+}
+
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.signin-left {
+  position: relative;
+  width: 40%; /* adjust to your size */
+  height: 35rem; /* adjust to your size */
+  overflow: visible; /* allow sticking out */
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: visible; /* allow sticking out */
+  z-index: -1;
+}
+
+/* Base image style */
+.carousel img {
+  position: absolute;
+  top: 0;
+  left: 50%; /* center base */
+  width: 70%; /* smaller than container so neighbors can show */
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  border-radius: 2rem;
+  transform: translateX(-50%) scale(0.9);
+  z-index: 1;
+}
+
+/* Active image */
+.carousel img.active {
+  opacity: 1;
+  z-index: 3;
+  transform: translateX(-50%) scale(1);
+  filter: blur(0);
+}
+
+/* Previous image (to the left, blurred) */
+.carousel img.prev {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-90%) scale(0.9);
+  filter: blur(4px);
+}
+
+/* Next image (to the right, blurred) */
+.carousel img.next {
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-10%) scale(0.9);
+  filter: blur(4px);
+}
+
+/* Dots indicator */
+.indicator {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 6px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  background: #000;
+  opacity: 0.3;
+  border-radius: 50%;
+}
+.dot.active {
+  opacity: 1;
+}
+
+/* Right side */
+.signin-right {
+  margin-left: 5%;
+  margin-right: -5%;
+  background: #e6e1d5;
+  border-radius: 2rem;
+  padding: 3rem 2rem;
+  flex: 1;
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.signin-right h2 {
+  margin: 0 0 2rem;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+
+.input-box {
+  background: url("floral-bg.png") repeat;
+  background-size: contain;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  margin-bottom: 1.2rem;
+  width: 100%;
+}
+
+.input-box input {
+  border: none;
+  outline: none;
+  width: 25em;
+  font-size: 0.9rem;
+  padding: 0.6rem 0.4rem;
+}
+
+.signin-btn {
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.8rem;
+  width: 100%;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 0.95rem;
+  letter-spacing: 0.05em;
+}
+
+.or-section {
+  margin: 1.8rem 0 1rem;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  background: #000;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
